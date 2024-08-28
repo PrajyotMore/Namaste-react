@@ -26,7 +26,6 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const onlineStatus = useOnlineStatus();
     // whenever state varibales update, react triggers a reconciliation cycle(re-render the component)
-  console.log('Body renderd',listOfRestaurant)
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard)
 

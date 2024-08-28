@@ -11,14 +11,14 @@ class UserClass extends React.Component {
                
             }
         }
-        console.log(this.props.name +'Constructor child')
+        //console.log(this.props.name +'Constructor child')
 
     }
 
    async componentDidMount () {
        const data = await fetch("https://api.github.com/users/PrajyotMore");
        const json = await data.json();
-       console.log(json)
+       //console.log(json)
 
        this.setState({
         userInfo: json
@@ -27,11 +27,11 @@ class UserClass extends React.Component {
     }
 
     componentDidUpdate () {
-        console.log('component did update called')
+        //console.log('component did update called')
     }
 
     componentWillUnmount () {
-        console.log('component will unmount called ')
+        //console.log('component will unmount called ')
     }
     render() {
         // console.log(this.props.name +'render child')
